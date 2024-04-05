@@ -32,7 +32,7 @@ namespace GithubActionsLab
 
         // Implement 3 tests per operation, following a similar pattern as above
         [Test]
-        public void Subtract_Valid()
+        public void Subtract_Valid_Zheng()
         {
             Assert.AreEqual(5, Program.Subtract("6", "1"));
             Assert.AreEqual(0, Program.Subtract("2", "2"));
@@ -40,7 +40,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Subtract_Invalid()
+        public void Subtract_Invalid_Zheng()
         {
             Assert.Throws<FormatException>(() => Program.Subtract("9", "c"));
             Assert.Throws<FormatException>(() => Program.Subtract("c", "9"));
@@ -48,7 +48,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Subtract_Null()
+        public void Subtract_Null_Zheng()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Subtract("0", null));
             Assert.Throws<ArgumentNullException>(() => Program.Subtract(null, "0"));
@@ -56,7 +56,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Multiply_Valid()
+        public void Multiply_Valid_Zheng()
         {
             Assert.AreEqual(0, Program.Multiply("0", "1"));
             Assert.AreEqual(7, Program.Multiply("7", "1"));
@@ -65,7 +65,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Multiply_Invalid()
+        public void Multiply_Invalid_Zheng()
         {
             Assert.Throws<FormatException>(() => Program.Multiply("13", "j"));
             Assert.Throws<FormatException>(() => Program.Multiply("j", "13"));
@@ -73,7 +73,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Multiply_Null()
+        public void Multiply_Null_Zheng()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Multiply("3", null));
             Assert.Throws<ArgumentNullException>(() => Program.Multiply(null, "3"));
@@ -81,7 +81,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Power_Valid()
+        public void Power_Valid_Zheng()
         {
             Assert.AreEqual(8, Program.Power("2", "3"));
             Assert.AreEqual(0, Program.Power("0", "1"));
@@ -89,7 +89,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Power_Invalid()
+        public void Power_Invalid_Zheng()
         {
             Assert.Throws<FormatException>(() => Program.Power("4", "i"));
             Assert.Throws<FormatException>(() => Program.Power("j", "13"));
@@ -97,7 +97,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Power_Null()
+        public void Power_Null_Zheng()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Power("3", null));
             Assert.Throws<ArgumentNullException>(() => Program.Power(null, "3"));
