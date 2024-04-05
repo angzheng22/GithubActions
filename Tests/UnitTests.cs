@@ -61,7 +61,7 @@ namespace GithubActionsLab
             Assert.AreEqual(0, Program.Multiply("0", "1"));
             Assert.AreEqual(7, Program.Multiply("7", "1"));
             // intentionally make this case fail
-            Assert.AreEqual(6, Program.Multiply("-2", "3"));
+            Assert.AreEqual(-6, Program.Multiply("-2", "3"));
         }
 
         [Test]
